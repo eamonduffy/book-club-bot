@@ -1,0 +1,26 @@
+{
+  "name": "book-club-bot",
+  "version": "1.0.0",
+  "description": "discord book club bot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eamonduffy/book-club-bot.git"
+  },
+  "author": "eamon duffy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eamonduffy/book-club-bot/issues"
+  },
+  "homepage": "https://github.com/eamonduffy/book-club-bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^1.5.0",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.35",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
