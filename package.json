@@ -1,0 +1,27 @@
+{
+  "name": "base-discord-bot",
+  "version": "1.0.0",
+  "description": "base discord bot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eamonduffy/base-discord-bot.git"
+  },
+  "author": "eamon duffy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eamonduffy/base-discord-bot/issues"
+  },
+  "homepage": "https://github.com/eamonduffy/base-discord-bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^1.5.0",
+    "axios": "^1.3.4",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.35",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3"
+  }
+}
