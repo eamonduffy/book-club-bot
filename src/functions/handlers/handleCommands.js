@@ -22,11 +22,11 @@ module.exports = (client) => {
         }
 
         // clientID (bot ID) which is from discord developer portal
-        const clientId = "1079497991200718989";
+        const clientId = process.env.CLIENT_ID;
 
         // below are the guildIDs of my servers, to get the guildID. User needs to have dev mode on and right click server and look at bottom for 'Copy ID'
-        const myServerId = "890946950759874631"; // for my personal server
-        const coolCatsId = "449076992923402250"; // for cool cats server
+        const myServerId = process.env.PERSONAL_SERVER_ID; // for my personal server
+        const coolCatsId = process.env.COOL_CATS_ID; // for cool cats server
 
         const rest = new REST({ version: "10" }).setToken(process.env.token);
 

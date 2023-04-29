@@ -53,17 +53,6 @@ module.exports = {
                     const thumbnail = bookData.imageLinks.thumbnail;
                     const bookUrl = bookData.infoLink;
 
-                    // console.log("bookData", bookData);
-                    // console.log(`Title: ${bookTitle}`);
-                    // console.log(`Author: ${bookAuthor}`);
-                    // console.log(`Publisher: ${bookPublisher}`);
-                    // console.log(`pageCount: ${pageCount}`);
-                    // console.log(`description: ${description}`);
-                    // console.log(`categories: ${categories}`);
-                    // console.log(`averageRating: ${averageRating}`);
-                    // console.log(`thumbnail: ${thumbnail}`);
-                    // console.log(`bookUrl: ${bookUrl}`);
-
                     const reducedDesc = reduceStringSize(description);
                     const primaryColor = await getDominantColorFromImage(
                         thumbnail
@@ -80,6 +69,11 @@ module.exports = {
                         .setThumbnail(thumbnail)
                         .setURL(bookUrl)
                         .addFields([
+                            {
+                                name: `Author`,
+                                value: bookAuthor,
+                                inline: false,
+                            },
                             {
                                 name: `Description`,
                                 value: reducedDesc,
