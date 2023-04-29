@@ -60,6 +60,8 @@ npm start
 
 ```
 npm install -g pm2
+
+// start app process
 pm2 start . --watch --name "book-club-bot"
 
 // to stop app process
@@ -74,7 +76,7 @@ pm2 stop all
 
 -   `/generate [book] [author] [chapters]`: Generate question(s) based off given book name, author and chapter(s).
 
--   `poll [book 1] [book 2] [etc...]` : Generate a poll for book club voting. Enter up to 10 books, minimum 2.
+-   `/poll [book 1] [book 2] [etc...]` : Generate a poll for book club voting. Enter up to 10 books, minimum 2.
 
 -   `/lookup [book] [author]` : Lookup details of book and dispaly general info on it.
 
